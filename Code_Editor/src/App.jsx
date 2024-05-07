@@ -1,17 +1,29 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Editor from './Editor'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
       
-      <h1>This is code editor</h1>
-      
-      
+    
+      <div className="pane top-pane">
+        <Editor />
+        <Editor />
+        <Editor />
+      </div>
+      <div className="pane">
+        <iframe
+          srcDoc={srcDoc}
+          title="output"
+          sandbox="allow-scripts"
+          frameBorder="0"
+          width="100%"
+          height="100%"
+        />
+      </div>
     </>
   )
 }
