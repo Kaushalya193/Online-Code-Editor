@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Editor from './Editor'
 
 
+
 function App() {
   
 
@@ -16,10 +17,10 @@ function App() {
       </div>
       <div className="pane">
         <iframe
-          srcDoc={srcDoc}
+          
           title="output"
           sandbox="allow-scripts"
-          frameBorder="0"
+          frameBorder={0}
           width="100%"
           height="100%"
         />
